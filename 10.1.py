@@ -7,7 +7,7 @@ def some_gen(begin, end, func):
      func: функція, яка формує значення для послідовності
     """
     current = begin
-    for num in range(end): #4 повтора
+    for num in range(end): #4 повтора по проверке
         yield current
         current = func(current)
 from inspect import isgenerator
